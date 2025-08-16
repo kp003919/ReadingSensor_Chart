@@ -211,6 +211,12 @@ void setup(){
   // Connect to Wi-Fi
   // The ESP32/ESP8266 will connect to the Wi-Fi network specified by the ssid and password variables.
   WiFi.begin(ssid, password);
+  // Wait for the connection to be established
+  // The ESP32/ESP8266 will wait until it is connected to the Wi-Fi
+  // network before proceeding. This is done in a loop that checks the Wi-Fi
+  // status every second. If the connection is not established, it will print
+
+  
   while (WiFi.status() != WL_CONNECTED) 
   {
     delay(1000);
