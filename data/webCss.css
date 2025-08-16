@@ -1,0 +1,58 @@
+
+#Green_Led_On{
+    background-color: lightgreen;   
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#Green_Led_Off{
+    background-color: red;   
+    font-size: 1.5rem;
+    display:flexbox;
+    align-items: center;
+    text-align: center;
+}
+
+
+#myChart1{
+	 background-color: white;   
+    font-size: 1.5rem;
+    display:flexbox;
+    align-items: center;
+    text-align: center;
+	
+}
+h1   {color: rgb(0, 255, 195);}
+p    {color: rgb(0, 255, 195);}
+
+*{
+	box-sizing:border-box;
+}
+
+.column
+{
+	float:left;
+	width:50%;
+	padding:5px;
+	
+	
+}
+.row::after{
+	content:"";
+	display:table;
+	clear:both;	
+}
+
+#table{
+	background-color: rgb(128, 128, 128);   
+    border: 1px solid rgb(0, 0, 0);
+}
+#tr,td{
+	background-color: rgb(136, 74, 74);   
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#canvas { color: rgb(0, 255, 195);}
+

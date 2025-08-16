@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ESP32 Sensor Readings</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="chart.js"></script>
+	<link rel="stylesheet" href="webCss.css">
+  </head>
+  <body>
+   <h1>
+       <p> <center>  ESP32 Sensor Reading </center> </p>
+   </h1> 
+<!-- charts -->    
+    <div class="row">
+	  <div class="column">
+          <canvas id="myChart1" style="width:70%;max-width:600px"></canvas>
+	  </div>
+	  <div class="column">
+        <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+	  </div>
+	</div>
+	
+	<div class="row">
+	 <div class="column">
+       <canvas id="myChart3" style="width:100%;max-width:600px"></canvas>	
+	 </div>
+	
+	<!-- Table   -->  
+	 <h1>
+    <p> <left>  Reading Table  </left> </p>
+   </h1>   
+	 <div class="column">
+	 <table id = "sensor_reading">
+      <tr>
+        <th>Tempreture(C)</th>
+        <th>Tempreture(F)</th>
+		    <th>Humidity(%)</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>0</td>
+	      <td>0</td>
+      </tr>
+      </table>
+   </div>
+
+	 
+ <div class="column">
+	<!-- Led controling  -->  
+	<h1>
+       <p> <left>  Leds Control  </left> </p>
+   </h1>   
+	
+    <p><button  id="Green_Led_Control">Green_Led_Control</button></p>
+    <p> <button id="Red_Led_Control">Red_Led_Control</button></p>   
+    <p><button  id="Yellow_Led_Control">Yellow_Led_Control</button></p> 
+   </div>  
+  </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
